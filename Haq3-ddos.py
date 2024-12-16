@@ -85,7 +85,7 @@ def main():
         sys.exit(1)
 
     os.system("clear")
-    print(BANNER)
+    print(logo)
     log_message(f"Starting attack on {ip}:{port} with {threads} threads.")
     print(" [+] Press Ctrl+C to stop the attack.")
 
