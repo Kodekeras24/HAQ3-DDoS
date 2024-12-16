@@ -12,13 +12,13 @@ from django.core.exceptions import ValidationError
 
 os.system("clear")
 logo = """
-          ___       ___   ____            _______   ________
-         /  /      /  /  /    \          /  ___  \  \_____  \
+          ___       ___   ____            _______    _______
+         /  /      /  /  /    \          /  ___  \  \ ____  \
         /  /      /  /  /  /\  \        /  /   \  \       \  \
        /  /______/  /  /  /  \  \      /  /    /  /    ___/  /
       /   ——————   /  /  /____\  \    /  /    /  /    /___  \
      /  /      /  /  /  ————————  \  /  \____/  /   ______\  \
-    /__/      /__/  /__/        \__\  \____   _/   /__________/
+    /__/      /__/  /__/        \__\  \____   _/   /________/
 ╔═══════════════════════════════════════════════════════════════╗                                       \__\
 ║\033[31m                      H U D A I R U L  A L - A Q S H A                    ║     
 ║\033[32m                               INTERNAL SCRIPT                            ║      
@@ -69,7 +69,7 @@ def attack(ip: str, port: int, packet_size: int, rate_limit: float):
 # Main script execution
 def main():
     os.system("clear")
-    print(BANNER)
+    print(logo)
     ip = input(" [+] Enter Target IP: ").strip()
     if not validate_ip(ip):
         log_message("Invalid IP address provided. Exiting...")
