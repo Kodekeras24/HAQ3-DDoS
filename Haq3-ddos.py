@@ -10,27 +10,6 @@ from datetime import datetime
 from django.core.validators import validate_ipv46_address
 from django.core.exceptions import ValidationError
 
-os.system("clear")
-logo = """
-          ___       ___   ____            _______    _______
-         /  /      /  /  /    \          /  ___  \  \ ____  \
-        /  /      /  /  /  /\  \        /  /   \  \       \  \
-       /  /______/  /  /  /  \  \      /  /    /  /    ___/  /
-      /   ——————   /  /  /____\  \    /  /    /  /    /___  \
-     /  /      /  /  /  ————————  \  /  \____/  /   ______\  \
-    /__/      /__/  /__/        \__\  \____   _/   /________/
-                                           \__\
-
-╔═════════════════════════════════════════════════════╗                                       
-║\033[31m             H U D A I R U L  A L - A Q S H A         ║     
-║\033[32m                      INTERNAL SCRIPT                 ║      
-║\033[33m                         By: Za'24                    ║
-║\033[34m                            ||                        ║
-║\033[35m                          —oO0Oo—                     ║
-╚════════════════════════════════════════════════════╝
-"""
-faded_text = fade.fire(logo)
-print(faded_text)
 
 LOG_FILE = "attack_log.txt"
 
@@ -86,8 +65,29 @@ def main():
         log_message("Invalid input provided. Exiting...")
         sys.exit(1)
 
-    os.system("clear")
-    print(logo)
+os.system("clear")
+print(logo)
+logo = """
+          ___       ___   ____            _______    _______
+         /  /      /  /  /    \          /  ___  \  \ ____  \
+        /  /      /  /  /  /\  \        /  /   \  \       \  \
+       /  /______/  /  /  /  \  \      /  /    /  /    ___/  /
+      /   ——————   /  /  /____\  \    /  /    /  /    /___  \
+     /  /      /  /  /  ————————  \  /  \____/  /   ______\  \
+    /__/      /__/  /__/        \__\  \____   _/   /________/
+                                           \__\
+
+╔═════════════════════════════════════════════════════╗                                       
+║\033[31m             H U D A I R U L  A L - A Q S H A         ║     
+║\033[32m                      INTERNAL SCRIPT                 ║      
+║\033[33m                         By: Za'24                    ║
+║\033[34m                            ||                        ║
+║\033[35m                          —oO0Oo—                     ║
+╚════════════════════════════════════════════════════╝
+"""
+faded_text = fade.fire(logo)
+print(faded_text)
+          
     log_message(f"Starting attack on {ip}:{port} with {threads} threads.")
     print(" [+] Press Ctrl+C to stop the attack.")
 
