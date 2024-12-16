@@ -27,7 +27,8 @@ logo = """
 ║                                    —oO0Oo—                               ║
 ╚═══════════════════════════════════════════════════════════════╝
 """
-
+faded_text = fade.fire(logo)
+print(faded_text)
 
 LOG_FILE = "attack_log.txt"
 
