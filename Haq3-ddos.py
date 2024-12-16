@@ -76,10 +76,10 @@ def main():
         sys.exit(1)
 
     try:
-        port = int(input(" [+] Enter Starting Port Number (default 80): ").strip() or 80)
-        packet_size = int(input(" [+] Enter Packet Size (default 1490 bytes): ").strip() or 1490)
-        threads = int(input(" [+] Enter Number of Threads (default 4): ").strip() or 4)
-        rate_limit = float(input(" [+] Enter Rate Limit (seconds, default 0.01): ").strip() or 0.01)
+        port = int(input("\033[92m [+] Enter Starting Port Number (default 80): \033[0m").strip() or 80)
+        packet_size = int(input("\033[94m [+] Enter Packet Size (default 1490 bytes): \033[0m").strip() or 1490)
+        threads = int(input("\033[33m [+] Enter Number of Threads (default 4): \033[0m").strip() or 4)
+        rate_limit = float(input("\033[95m [+] Enter Rate Limit (seconds, default 0.01): \033[0m").strip() or 0.01)
     except ValueError:
         log_message("Invalid input provided. Exiting...")
         sys.exit(1)
