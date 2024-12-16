@@ -11,7 +11,7 @@ from django.core.validators import validate_ipv46_address
 from django.core.exceptions import ValidationError
 
 os.system("clear")
-       logo = """
+logo = """
           ___       ___   ____            _______    _______
          /  /      /  /  /    \          /  ___  \  \ ____  \
         /  /      /  /  /  /\  \        /  /   \  \       \  \
